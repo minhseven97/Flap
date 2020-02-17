@@ -32,10 +32,15 @@ namespace falp1
             string name = @"E:\winforms\falp1\falp1\input.txt";//tên đường dẫn đầy đủ của 1 tập tin
             fs = new FileStream(name, FileMode.Open);
             StreamReader rd = new StreamReader(fs, Encoding.UTF8);
-            string diem = rd.ReadToEnd();// ReadLine() chỉ đọc 1 dòng đầu, ReadToEnd là đọc hết
+            string diem = rd.ReadToEnd();// ReadLine() chỉ đọc 1 dòng đầu, ReadToEnd là đọc 
             rd.Close();
             txtdiem.Text = diem;
             
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
